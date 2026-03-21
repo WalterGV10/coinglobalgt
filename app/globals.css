@@ -1,0 +1,470 @@
+@import "tailwindcss";
+
+/* ── Design Tokens via Tailwind v4 @theme ── */
+@theme inline {
+  /* Void – Deep Navy Background Scale */
+  --color-void-950: #060a14;
+  --color-void-900: #0c1322;
+  --color-void-800: #141e32;
+  --color-void-700: #1c2842;
+
+  /* Gold – Primary Accent */
+  --color-neon-400: #f0d078;
+  --color-neon-500: #d4a853;
+  --color-neon-600: #b89030;
+  --color-neon-700: #9a7820;
+
+  /* Steel Blue – Secondary Accent */
+  --color-electric-400: #8fb8d8;
+  --color-electric-500: #6a9cc0;
+  --color-electric-600: #4a7ea0;
+
+  /* Star Whites */
+  --color-star-100: #f0f0f5;
+  --color-star-200: #d4d4e0;
+  --color-star-300: #a0a0b8;
+
+  /* Fonts */
+  --font-heading: var(--font-outfit);
+  --font-body: var(--font-inter);
+
+  /* Custom Animations */
+  --animate-fade-in-up: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+  --animate-fade-in: fade-in 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-pulse-glow: pulse-glow 2.5s ease-in-out infinite;
+  --animate-twinkle: twinkle 3s ease-in-out infinite;
+  --animate-marquee: marquee 30s linear infinite;
+  --animate-shimmer: shimmer 2s ease-in-out infinite;
+  --animate-scale-in: scale-in 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* ── Spring Easing Custom Properties ── */
+:root {
+  --ease-spring: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring-heavy: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+  --duration-reveal: 0.7s;
+  --duration-micro: 0.25s;
+}
+
+/* ── Keyframes ── */
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(212, 168, 83, 0.25); }
+  50% { box-shadow: 0 0 35px rgba(212, 168, 83, 0.45), 0 0 70px rgba(212, 168, 83, 0.12); }
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes shimmer {
+  0%, 100% { background-position: -200% center; }
+  50% { background-position: 200% center; }
+}
+
+@keyframes scale-in {
+  from { opacity: 0; transform: scale(0.92); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes line-expand {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+@keyframes focus-ring-pulse {
+  0%, 100% { box-shadow: 0 0 0 2px rgba(212, 168, 83, 0.15); }
+  50% { box-shadow: 0 0 0 4px rgba(212, 168, 83, 0.25), 0 0 16px rgba(212, 168, 83, 0.1); }
+}
+
+@keyframes press {
+  0% { transform: scale(1); }
+  50% { transform: scale(0.97); }
+  100% { transform: scale(1); }
+}
+
+@keyframes checkmark-pop {
+  0% { transform: scale(0); opacity: 0; }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes slide-down {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Responsive Scroll Reveal System ── */
+.reveal-up,
+.reveal-down,
+.reveal-left,
+.reveal-right,
+.reveal-scale {
+  opacity: 0;
+  will-change: opacity, transform;
+  transition:
+    opacity var(--duration-reveal) var(--ease-spring),
+    transform var(--duration-reveal) var(--ease-spring);
+}
+
+/* ── Mobile / Vertical Screens (max-width: 767px) ── */
+/* On mobile, horizontal movements are risky and feel cramped. 
+   We unify them into an elegant, subtle vertical lift with a soft blur. */
+@media (max-width: 767px) {
+  .reveal-up, .reveal-down, .reveal-left, .reveal-right { 
+    transform: translateY(24px); 
+  }
+  .reveal-scale { 
+    transform: translateY(16px) scale(0.96); 
+  }
+}
+
+/* ── Desktop / Horizontal Screens (min-width: 768px) ── */
+/* On wider screens, we enable dramatic directional sweeps, 
+   stronger scaling, and a deeper cinematic blur. */
+@media (min-width: 768px) {
+  .reveal-up { transform: translateY(50px); }
+  .reveal-down { transform: translateY(-50px); }
+  .reveal-left { transform: translateX(50px) scale(0.98); }
+  .reveal-right { transform: translateX(-50px) scale(0.98); }
+  .reveal-scale { transform: scale(0.85); }
+}
+
+/* Visible State (Applies to all) */
+.reveal-up.is-visible,
+.reveal-down.is-visible,
+.reveal-left.is-visible,
+.reveal-right.is-visible,
+.reveal-scale.is-visible {
+  opacity: 1;
+  transform: translate(0) scale(1);
+}
+
+/* ── Global Styles ── */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body), system-ui, sans-serif;
+  background-color: var(--color-void-950);
+  color: var(--color-star-100);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Custom Scrollbar ── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-void-950);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-neon-700);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-neon-600);
+}
+
+/* ── Selection ── */
+::selection {
+  background: rgba(212, 168, 83, 0.3);
+  color: #fff;
+}
+
+/* ── Glassmorphism Utility ── */
+.glass {
+  background: rgba(12, 19, 34, 0.55);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 168, 83, 0.1);
+}
+
+.glass-strong {
+  background: rgba(12, 19, 34, 0.75);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(212, 168, 83, 0.15);
+}
+
+/* ── Gradient Text Utility ── */
+.text-gradient-primary {
+  background: linear-gradient(135deg, #f0d078 0%, #d4a853 40%, #8fb8d8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Neon Arc (Hero Background) ── */
+.neon-arc {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.neon-arc::before {
+  content: '';
+  position: absolute;
+  top: -40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140%;
+  height: 80%;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(212, 168, 83, 0.1) 0%,
+    rgba(106, 156, 192, 0.05) 35%,
+    transparent 65%
+  );
+  border-radius: 50%;
+}
+
+.neon-arc::after {
+  content: '';
+  position: absolute;
+  bottom: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120%;
+  height: 50%;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(74, 126, 160, 0.06) 0%,
+    transparent 60%
+  );
+}
+
+/* ── Glow Hover for Cards ── */
+.card-glow {
+  transition: all 0.4s var(--ease-spring);
+}
+
+.card-glow:hover {
+  border-color: rgba(212, 168, 83, 0.25);
+  box-shadow: 0 0 30px rgba(212, 168, 83, 0.08), 0 8px 32px rgba(0, 0, 0, 0.4);
+  transform: translateY(-4px);
+}
+
+/* ── Input Focus Micro-interactions ── */
+.input-glow {
+  transition:
+    border-color var(--duration-micro) var(--ease-spring),
+    box-shadow var(--duration-micro) var(--ease-spring);
+}
+
+.input-glow:focus {
+  border-color: rgba(212, 168, 83, 0.4) !important;
+  box-shadow: 0 0 0 3px rgba(212, 168, 83, 0.1), 0 0 20px rgba(212, 168, 83, 0.06);
+}
+
+/* ── Button Press Effect ── */
+.btn-press {
+  transition: transform var(--duration-micro) var(--ease-spring);
+}
+
+.btn-press:active {
+  transform: scale(0.97);
+}
+
+/* ── Marquee Pause on Hover ── */
+.marquee-pausable:hover {
+  animation-play-state: paused;
+}
+
+/* ── Mobile Menu Animations ── */
+.mobile-overlay-enter {
+  animation: fade-in 0.3s var(--ease-spring) both;
+}
+
+.mobile-link-enter {
+  animation: slide-down 0.35s var(--ease-spring) both;
+}
+
+/* ── Content Visibility for Below-the-fold ── */
+.cv-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 500px;
+}
+
+/* ── Gold Ornamental Divider ── */
+.gold-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.gold-divider::before,
+.gold-divider::after {
+  content: '';
+  flex: 1;
+  max-width: 80px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(212, 168, 83, 0.4), transparent);
+}
+
+.gold-divider-diamond {
+  width: 6px;
+  height: 6px;
+  background: rgba(212, 168, 83, 0.5);
+  transform: rotate(45deg);
+  flex-shrink: 0;
+}
+
+/* ── Gold Gradient Border ── */
+.gold-border {
+  position: relative;
+}
+
+.gold-border::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, rgba(240, 208, 120, 0.3), rgba(212, 168, 83, 0.05), rgba(240, 208, 120, 0.2));
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: xor;
+  pointer-events: none;
+}
+
+/* ── Gold Corner Accents ── */
+.gold-corners {
+  position: relative;
+}
+
+.gold-corners::before,
+.gold-corners::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-color: rgba(212, 168, 83, 0.25);
+  pointer-events: none;
+  transition: border-color 0.3s var(--ease-spring);
+}
+
+.gold-corners::before {
+  top: -1px;
+  left: -1px;
+  border-top: 1.5px solid;
+  border-left: 1.5px solid;
+  border-top-left-radius: inherit;
+}
+
+.gold-corners::after {
+  bottom: -1px;
+  right: -1px;
+  border-bottom: 1.5px solid;
+  border-right: 1.5px solid;
+  border-bottom-right-radius: inherit;
+}
+
+.group:hover .gold-corners::before,
+.group:hover .gold-corners::after,
+.gold-corners:hover::before,
+.gold-corners:hover::after {
+  border-color: rgba(212, 168, 83, 0.5);
+}
+
+/* ── Gold Shimmer Text ── */
+.text-shimmer-gold {
+  background: linear-gradient(
+    90deg,
+    #d4a853 0%,
+    #f0d078 25%,
+    #ffe8a0 50%,
+    #f0d078 75%,
+    #d4a853 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer-text 4s linear infinite;
+}
+
+@keyframes shimmer-text {
+  from { background-position: 0% center; }
+  to { background-position: 200% center; }
+}
+
+/* ── Gold Section Glow (top edge) ── */
+.gold-section-edge {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(212, 168, 83, 0.5), rgba(240, 208, 120, 0.3), rgba(212, 168, 83, 0.5), transparent);
+}
+
+.gold-section-edge::after {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  height: 8px;
+  background: radial-gradient(ellipse at center, rgba(212, 168, 83, 0.15) 0%, transparent 70%);
+  filter: blur(2px);
+}
+
+/* ── Prefers Reduced Motion ── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .reveal-up,
+  .reveal-down,
+  .reveal-left,
+  .reveal-right,
+  .reveal-scale {
+    opacity: 1;
+    transform: none;
+  }
+
+  .line-reveal {
+    transform: scaleX(1);
+  }
+}

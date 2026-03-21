@@ -1,0 +1,196 @@
+{
+  "Metadata": {
+    "title": "Coin Global Guatemala | Global Fiduciary and Financial Structuring",
+    "description": "We design secure and compliant fiduciary, corporate, and digital asset structures to connect global capital with international opportunities. Headquartered in Guatemala City.",
+    "keywords": "fiduciary Guatemala, financial structuring, digital assets, crypto governance, investment Guatemala, SPV Guatemala, Coin Global",
+    "og_alt": "Coin Global Guatemala - Fiduciary Structuring"
+  },
+  "Hero": {
+    "eyebrow": "Fiduciary & Financial Structuring",
+    "location": "Guatemala",
+    "title1": "Connect Your Capital",
+    "title2": "With the World",
+    "subtitle": "We design secure and compliant fiduciary, corporate, and digital asset structures to connect global capital with international opportunities.",
+    "cta_primary": "Private Consultation",
+    "cta_secondary": "Explore Our Services"
+  },
+  "Nav": {
+    "inicio": "Home",
+    "servicios": "Services",
+    "nosotros": "About Us",
+    "jurisdicciones": "Jurisdictions",
+    "contacto": "Contact",
+    "cta": "Schedule a Consultation",
+    "open_menu": "Open menu",
+    "close_menu": "Close menu"
+  },
+  "Services": {
+    "eyebrow": "Explore Our Expertise",
+    "title": "Fiduciary and Financial Services",
+    "description": "We design secure and compliant fiduciary, corporate, and digital asset structures to connect global capital with international opportunities.",
+    "cta": "Consult Specialist",
+    "items": [
+      {
+        "title": "Private and Family Trusts",
+        "description": "Asset protection, succession planning and family office structuring with international reach.",
+        "features": [
+          "Trust and Foundation Structuring",
+          "Family Office Strategies",
+          "Cross-border Succession Planning"
+        ]
+      },
+      {
+        "title": "Corporate Structuring and Investment",
+        "description": "Creation of sophisticated legal vehicles and administration of structures for cross-border operations.",
+        "features": [
+          "Special Purpose Vehicles (SPVs)",
+          "Holding Company Creation",
+          "Global Corporate Optimization"
+        ]
+      },
+      {
+        "title": "Digital Asset and Crypto Governance",
+        "description": "Secure legal and regulatory frameworks for Bitcoin, stablecoins and tokenized instruments under institutional standards.",
+        "features": [
+          "Crypto Asset Trusts",
+          "Tokenization Structuring",
+          "Digital Regulatory Compliance"
+        ]
+      },
+      {
+        "title": "Investment Fund Administration",
+        "description": "Administrative management of private funds with transparent reporting and comprehensive regulatory oversight.",
+        "features": [
+          "Private Fund Launch",
+          "Supervision and Financial Reporting",
+          "FATCA & CRS Regulatory Audit"
+        ]
+      },
+      {
+        "title": "Cross-border Contracts and Governance",
+        "description": "Legal formation of multi-jurisdictional entities, governance vehicles and international corporate agreements.",
+        "features": [
+          "International Agreements and Contracts",
+          "Corporate Governance Models",
+          "Dispute Prevention and Arbitration"
+        ]
+      },
+      {
+        "title": "Financial Operations Center",
+        "description": "Expert management for multi-currency operations and high-value transactions under regulatory rigor.",
+        "features": [
+          "Institutional Custody and Escrow",
+          "Multi-currency Strategies",
+          "International Banking Onboarding"
+        ]
+      }
+    ]
+  },
+  "About": {
+    "eyebrow": "About Us",
+    "title_white": "Fiduciary Excellence",
+    "title_gold": "Globally",
+    "p1": "We design and manage international fiduciary, legal and financial solutions. We act as the secure bridge between our clients' capital and opportunities in the world's most solid jurisdictions.",
+    "p2": "Our approach combines sophisticated legal architecture and rigorous regulatory compliance for private clients, corporations and exclusive investment funds.",
+    "stat1_title": "Active Jurisdictions",
+    "stat1_desc": "Proven global coverage",
+    "stat2_title": "FATCA & CRS",
+    "stat2_desc": "Strict audit and compliance",
+    "stat3_title": "ISO 9001",
+    "stat3_desc": "Certified quality management",
+    "cta_team": "Meet our team of experts",
+    "capabilities_title": "Capabilities Index",
+    "capabilities_items": [
+      {
+        "title": "Private and Family Trusts",
+        "desc": "Tailored fiduciary structures for asset protection, succession and governance in multiple jurisdictions."
+      },
+      {
+        "title": "Investment Fund Administration",
+        "desc": "Third-party fund management with transparent reporting and regulatory oversight."
+      },
+      {
+        "title": "Corporate Structures and Holdings",
+        "desc": "Special Purpose Vehicles (SPVs) and holding entities for investment and international expansion."
+      },
+      {
+        "title": "Digital Asset and Crypto Structuring",
+        "desc": "Legal frameworks for Bitcoin, stablecoins and tokenized instruments under AML/CFT and FATCA standards."
+      },
+      {
+        "title": "Cross-border Contracts and Governance",
+        "desc": "Formation and management of multi-jurisdictional entities, governance vehicles and arbitration clauses."
+      },
+      {
+        "title": "Global Financial Operations Center",
+        "desc": "Multi-currency exchange, digital custody and complex international transfers under regulatory compliance."
+      }
+    ],
+    "footer_title": "Strategic Headquarters in Guatemala",
+    "footer_desc": "Regional center for structuring in Central America"
+  },
+  "Jurisdictions": {
+    "eyebrow": "Global Coverage: 180+ Jurisdictions",
+    "title": "Banking and Regulatory Strength",
+    "description": "Operational presence in the Americas, Europe and MENA under regulatory compliance legal frameworks.",
+    "countries": {
+      "RepDominicana": "Dominican Republic",
+      "EstadosUnidos": "USA",
+      "México": "Mexico",
+      "Panamá": "Panama",
+      "Brasil": "Brazil",
+      "Colombia": "Colombia",
+      "Francia": "France",
+      "Dubái": "Dubai",
+      "Singapur": "Singapore",
+      "Qatar": "Qatar"
+    }
+  },
+  "Contact": {
+    "eyebrow": "Contact Us",
+    "title": "Let's Connect",
+    "form": {
+      "name": "Name",
+      "name_placeholder": "Your full name",
+      "email": "Email Address",
+      "email_placeholder": "email@example.com",
+      "phone": "Phone",
+      "phone_placeholder": "+502 0000 0000",
+      "message": "Message",
+      "message_placeholder": "Tell us about your project...",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "sent": "Message Sent!"
+    },
+    "info": {
+      "call": "Call Us",
+      "schedule": "Monday to Friday, 8am - 5pm",
+      "whatsapp": "WhatsApp",
+      "whatsapp_sub": "Write to us directly",
+      "email": "Email",
+      "office": "Guatemala Office",
+      "address": "5th Avenue 5-55, Zone 14\nGuatemala City, 01014\nSecond Floor"
+    },
+    "whatsapp_message": "Hello, I am interested in learning more about Coin Global Guatemala's services."
+  },
+  "Footer": {
+    "description": "International firm specialized in fiduciary, legal and financial structuring, operating under FATCA, CRS and AML/CFT standards.",
+    "part_of": "Part of",
+    "nav_title": "Navigation",
+    "services_title": "Services",
+    "contact_title": "Contact",
+    "copyright": "All rights reserved.",
+    "developed_by": "Developed by",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "Partners": {
+    "title": "Strategic Partners and Allies"
+  },
+  "Testimonials": {
+    "eyebrow": "Testimonials",
+    "quote": "«The fiduciary structuring that Coin Global designed for our family group gave us the peace of mind and international reach we were looking for. Top-level professionalism.»",
+    "author": "Carlos Rodriguez",
+    "position": "CEO, Grupo Inversiones CA"
+  }
+}

@@ -1,0 +1,196 @@
+{
+  "Metadata": {
+    "title": "Coin Global Guatemala | Estructuración Fiduciaria y Financiera Global",
+    "description": "Diseñamos estructuras fiduciarias, corporativas y de activos digitales seguras y en cumplimiento regulatorio para conectar capital global con oportunidades internacionales. Sede en Ciudad de Guatemala.",
+    "keywords": "fideicomiso Guatemala, estructuración financiera, activos digitales, crypto governance, inversión Guatemala, SPV Guatemala, Coin Global",
+    "og_alt": "Coin Global Guatemala - Estructuración Fiduciaria"
+  },
+  "Hero": {
+    "eyebrow": "Estructuración Fiduciaria & Financiera",
+    "location": "Guatemala",
+    "title1": "Conecta Tu Capital",
+    "title2": "Con el Mundo",
+    "subtitle": "Diseñamos estructuras fiduciarias, corporativas y de activos digitales seguras y en cumplimiento regulatorio para conectar capital global con oportunidades internacionales.",
+    "cta_primary": "Consulta Privada",
+    "cta_secondary": "Conoce Nuestros Servicios"
+  },
+  "Nav": {
+    "inicio": "Inicio",
+    "servicios": "Servicios",
+    "nosotros": "Nosotros",
+    "jurisdicciones": "Jurisdicciones",
+    "contacto": "Contacto",
+    "cta": "Agenda una Consulta",
+    "open_menu": "Abrir menú",
+    "close_menu": "Cerrar menú"
+  },
+  "Services": {
+    "eyebrow": "Explora Nuestra Expertise",
+    "title": "Servicios Fiduciarios y Financieros",
+    "description": "Diseñamos estructuras fiduciarias, corporativas y de activos digitales seguras y en cumplimiento para conectar capital global con oportunidades internacionales.",
+    "cta": "Consultar Especialista",
+    "items": [
+      {
+        "title": "Fideicomisos Privados y Familiares",
+        "description": "Protección de activos, planificación sucesoria y estructuración de oficinas familiares (Family Offices) con alcance internacional.",
+        "features": [
+          "Estructuración de Trusts y Fundaciones",
+          "Estrategias para Family Offices",
+          "Planificación Sucesoria Transfronteriza"
+        ]
+      },
+      {
+        "title": "Estructuración Corporativa e Inversión",
+        "description": "Creación de vehículos legales sofisticados y administración de estructuras para operaciones transfronterizas.",
+        "features": [
+          "Vehículos de Propósito Especial (SPVs)",
+          "Creación de Entidades Holding",
+          "Optimización Corporativa Global"
+        ]
+      },
+      {
+        "title": "Gobernanza de Activos Digitales y Cripto",
+        "description": "Marcos legales y regulatorios seguros para Bitcoin, stablecoins e instrumentos tokenizados bajo estándares institucionales.",
+        "features": [
+          "Fideicomisos para Criptoactivos",
+          "Estructuración de Tokenización",
+          "Cumplimiento Regulatorio Digital"
+        ]
+      },
+      {
+        "title": "Administración de Fondos de Inversión",
+        "description": "Gestión administrativa de fondos privados con reportes transparentes y supervisión regulatoria integral.",
+        "features": [
+          "Lanzamiento de Fondos Privados",
+          "Supervisión y Reportes Financieros",
+          "Auditoría Normativa FATCA & CRS"
+        ]
+      },
+      {
+        "title": "Contratos Transfronterizos y Gobernanza",
+        "description": "Formación legal de entidades multi-jurisdiccionales, vehículos de gobernanza y acuerdos corporativos internacionales.",
+        "features": [
+          "Acuerdos y Contratos Internacionales",
+          "Modelos de Gobernanza Corporativa",
+          "Prevención de Disputas y Arbitraje"
+        ]
+      },
+      {
+        "title": "Centro de Operaciones Financieras",
+        "description": "Gestión experta para operaciones en múltiples monedas y transacciones de alto valor bajo rigor regulatorio.",
+        "features": [
+          "Custodia y Escrow Institucional",
+          "Estrategias Multi-Divisa",
+          "Onboarding Bancario Internacional"
+        ]
+      }
+    ]
+  },
+  "About": {
+    "eyebrow": "Quiénes Somos",
+    "title_white": "Excelencia Fiduciaria",
+    "title_gold": "a Nivel Global",
+    "p1": "Diseñamos y administramos soluciones fiduciarias, legales y financieras internacionales. Actuamos como el puente seguro entre el capital de nuestros clientes y las oportunidades en las jurisdicciones más sólidas del mundo.",
+    "p2": "Nuestro enfoque combina arquitectura legal sofisticada y un riguroso cumplimiento normativo para clientes privados corporaciones y fondos de inversión exclusivos.",
+    "stat1_title": "Jurisdicciones Activas",
+    "stat1_desc": "Cobertura global comprobada",
+    "stat2_title": "FATCA & CRS",
+    "stat2_desc": "Auditoría y cumplimiento estricto",
+    "stat3_title": "ISO 9001",
+    "stat3_desc": "Gestión de calidad certificada",
+    "cta_team": "Conoce a nuestro equipo de expertos",
+    "capabilities_title": "Índice de Capacidades",
+    "capabilities_items": [
+      {
+        "title": "Fideicomisos Privados y Familiares",
+        "desc": "Estructuras fiduciarias a medida para protección de activos, sucesión y gobernanza en múltiples jurisdicciones."
+      },
+      {
+        "title": "Administración de Fondos de Inversión",
+        "desc": "Gestión de fondos de terceros con reportes transparentes y supervisión regulatoria."
+      },
+      {
+        "title": "Estructuras Corporativas y Holdings",
+        "desc": "Vehículos de propósito especial (SPVs) y entidades holding para inversión y expansión internacional."
+      },
+      {
+        "title": "Estructuración de Activos Digitales y Cripto",
+        "desc": "Marcos legales para Bitcoin, stablecoins e instrumentos tokenizados bajo estándares AML/CFT y FATCA."
+      },
+      {
+        "title": "Contratos Transfronterizos y Gobernanza",
+        "desc": "Formación y gestión de entidades multi-jurisdiccionales, vehículos de gobernanza y cláusulas de arbitraje."
+      },
+      {
+        "title": "Centro de Operaciones Financieras Globales",
+        "desc": "Cambio multi-divisa, custodia digital y transferencias internacionales complejas bajo cumplimiento regulatorio."
+      }
+    ],
+    "footer_title": "Sede Estratégica en Guatemala",
+    "footer_desc": "Centro regional para estructuración en Centroamérica"
+  },
+  "Jurisdictions": {
+    "eyebrow": "Cobertura Global: 180+ Jurisdicciones",
+    "title": "Fortaleza Bancaria y Regulatoria",
+    "description": "Presencia operativa en las Américas, Europa y MENA bajo marcos legales de cumplimiento regulatorio.",
+    "countries": {
+      "RepDominicana": "Rep. Dominicana",
+      "EstadosUnidos": "Estados Unidos",
+      "México": "México",
+      "Panamá": "Panamá",
+      "Brasil": "Brasil",
+      "Colombia": "Colombia",
+      "Francia": "Francia",
+      "Dubái": "Dubái",
+      "Singapur": "Singapur",
+      "Qatar": "Qatar"
+    }
+  },
+  "Contact": {
+    "eyebrow": "Contáctanos",
+    "title": "Conectemos",
+    "form": {
+      "name": "Nombre",
+      "name_placeholder": "Tu nombre completo",
+      "email": "Correo Electrónico",
+      "email_placeholder": "correo@ejemplo.com",
+      "phone": "Teléfono",
+      "phone_placeholder": "+502 0000 0000",
+      "message": "Mensaje",
+      "message_placeholder": "Cuéntanos sobre tu proyecto...",
+      "submit": "Enviar Mensaje",
+      "sending": "Enviando...",
+      "sent": "¡Mensaje Enviado!"
+    },
+    "info": {
+      "call": "Llámanos",
+      "schedule": "Lunes a Viernes, 8am - 5pm",
+      "whatsapp": "WhatsApp",
+      "whatsapp_sub": "Escríbenos directamente",
+      "email": "Correo",
+      "office": "Oficina Guatemala",
+      "address": "5.ª Avenida 5-55, Zona 14\nCiudad de Guatemala, 01014\nSegundo Nivel"
+    },
+    "whatsapp_message": "Hola, me interesa conocer más sobre los servicios de Coin Global Guatemala."
+  },
+  "Footer": {
+    "description": "Firma internacional especializada en estructuración fiduciaria, legal y financiera, operando bajo estándares FATCA, CRS y AML/CFT.",
+    "part_of": "Parte de",
+    "nav_title": "Navegación",
+    "services_title": "Servicios",
+    "contact_title": "Contacto",
+    "copyright": "Todos los derechos reservados.",
+    "developed_by": "Desarrollado por",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Servicio"
+  },
+  "Partners": {
+    "title": "Empresas y Aliados Estratégicos"
+  },
+  "Testimonials": {
+    "eyebrow": "Testimonios",
+    "quote": "«La estructuración fiduciaria que Coin Global diseñó para nuestro grupo familiar nos brindó la tranquilidad y el alcance internacional que buscábamos. Profesionalismo de primer nivel.»",
+    "author": "Carlos Rodríguez",
+    "position": "Director General, Grupo Inversiones CA"
+  }
+}
