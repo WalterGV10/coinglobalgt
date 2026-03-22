@@ -8,6 +8,15 @@ const nextConfig = {
     eslint: {
         ignoreDuringBuilds: true,
     },
+    async redirects() {
+        return [
+            {
+                source: '/',
+                destination: '/es',
+                permanent: false,
+            },
+        ];
+    },
 };
  
 export default withNextIntl(nextConfig);
