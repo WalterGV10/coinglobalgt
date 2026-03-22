@@ -74,10 +74,10 @@ export default function Hero() {
       />
 
       {/* Content */}
-      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center">
+      <div className="relative z-10 max-w-5xl 2xl:max-w-6xl mx-auto px-4 sm:px-6 text-center">
         {/* Eyebrow */}
         <p
-          className={`group relative overflow-hidden inline-flex items-center gap-2.5 px-5 py-2 rounded-full border border-neon-500/20 bg-neon-500/5 backdrop-blur-md text-neon-400 text-[10px] sm:text-xs font-semibold tracking-[0.2em] uppercase mb-8 transition-all duration-700 ${
+          className={`group relative overflow-hidden inline-flex items-center gap-2.5 px-5 py-2 rounded-full border border-neon-500/20 bg-neon-500/5 backdrop-blur-md text-neon-400 text-[10px] sm:text-xs font-semibold tracking-[0.2em] uppercase mb-6 sm:mb-8 transition-all duration-700 ${
             mounted
               ? "opacity-100 translate-y-0"
               : "opacity-0 translate-y-6"
@@ -94,7 +94,7 @@ export default function Hero() {
 
         {/* H1 — LCP element */}
         <h1
-          className={`font-[family-name:var(--font-heading)] text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.08] tracking-tight mb-6 transition-all duration-700 ${
+          className={`font-[family-name:var(--font-heading)] text-4xl sm:text-5xl md:text-6xl lg:text-7xl 2xl:text-8xl font-bold leading-[1.08] tracking-tight mb-4 sm:mb-6 transition-all duration-700 ${
             mounted
               ? "opacity-100 translate-y-0"
               : "opacity-0 translate-y-8"
@@ -111,7 +111,7 @@ export default function Hero() {
 
         {/* Subtitle */}
         <p
-          className={`max-w-2xl mx-auto text-base sm:text-lg md:text-xl text-star-300 leading-relaxed mb-10 transition-all duration-700 ${
+          className={`max-w-2xl 2xl:max-w-3xl mx-auto text-base sm:text-lg md:text-xl 2xl:text-2xl text-star-300 leading-relaxed mb-6 sm:mb-10 transition-all duration-700 ${
             mounted
               ? "opacity-100 translate-y-0"
               : "opacity-0 translate-y-8"
@@ -126,7 +126,7 @@ export default function Hero() {
 
         {/* Gold Ornamental Divider */}
         <div
-          className={`gold-divider mb-10 transition-all duration-700 ${mounted ? "opacity-100" : "opacity-0"}`}
+          className={`gold-divider mb-6 sm:mb-10 transition-all duration-700 ${mounted ? "opacity-100" : "opacity-0"}`}
           style={{ transitionTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)", transitionDelay: "370ms" }}
         >
           <span className="gold-divider-diamond" />

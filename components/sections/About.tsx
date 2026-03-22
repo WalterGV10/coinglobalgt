@@ -15,14 +15,14 @@ export default function About() {
   const capabilities = Array.isArray(rawCapabilities) ? (rawCapabilities as CapabilityItem[]) : [];
 
   return (
-    <section id="nosotros" className="relative z-10 py-24 md:py-32 cv-auto overflow-hidden">
+    <section id="nosotros" className="relative z-10 py-16 sm:py-20 lg:py-24 2xl:py-32 cv-auto overflow-hidden">
       {/* Gold section edge */}
       <div className="gold-section-edge" />
 
       {/* Subtle background glow for this section */}
       <div className="absolute top-1/2 left-0 w-[500px] h-[500px] rounded-full bg-neon-600/5 blur-[120px] pointer-events-none -translate-y-1/2 -translate-x-1/2" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl 2xl:max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           
           {/* Left Column: Narrative (Spans 5 cols) */}

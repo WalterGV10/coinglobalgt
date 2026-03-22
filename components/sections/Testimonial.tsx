@@ -7,8 +7,8 @@ export default function Testimonial() {
   const t = useTranslations("Testimonials");
 
   return (
-    <section className="relative z-10 py-24 md:py-32 cv-auto">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative z-10 py-16 sm:py-20 lg:py-24 2xl:py-32 cv-auto">
+      <div className="max-w-4xl 2xl:max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal>
           <div className="text-center mb-10">
             <p className="text-neon-400 text-sm font-semibold tracking-widest uppercase">

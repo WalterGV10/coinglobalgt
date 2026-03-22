@@ -66,11 +66,11 @@ export default function Services() {
   const items = Array.isArray(rawItems) ? (rawItems as ServiceItem[]) : [];
 
   return (
-    <section id="servicios" className="relative z-10 py-24 md:py-32">
+    <section id="servicios" className="relative z-10 py-16 sm:py-20 lg:py-24 2xl:py-32">
       {/* Gold section edge */}
       <div className="gold-section-edge" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl 2xl:max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <ScrollReveal>
           <div className="text-center mb-16 md:mb-20">
