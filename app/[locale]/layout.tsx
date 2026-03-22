@@ -48,7 +48,7 @@ export async function generateMetadata({
       siteName: "Coin Global Guatemala",
       images: [
         {
-          url: "/og-image.png",
+          url: "https://www.coinglobalgt.com/og-image.png",
           width: 1200,
           height: 630,
           alt: t("og_alt"),
@@ -61,7 +61,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: t("title"),
       description: t("description"),
-      images: ["/og-image.png"],
+      images: ["https://www.coinglobalgt.com/og-image.png"],
     },
     robots: {
       index: true,
