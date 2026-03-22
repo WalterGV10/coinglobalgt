@@ -1,15 +1,10 @@
-import createMiddleware from 'next-intl/middleware';
+import { NextResponse } from 'next/server';
+import type { NextRequest } from 'next/server';
 
-export default createMiddleware({
-  locales: ['en', 'es'],
-  defaultLocale: 'en',
-  localePrefix: 'always'
-});
+export function middleware(request: NextRequest) {
+  return NextResponse.next();
+}
 
 export const config = {
-  matcher: [
-    '/',
-    '/(en|es)/:path*',
-    '/((?!_next|_vercel|.*\\..*).*)'
-  ]
+  matcher: ['/((?!_next|_vercel|.*\\..*).*) ']
 };
