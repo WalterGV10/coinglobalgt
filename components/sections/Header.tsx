@@ -30,8 +30,8 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-void-950/98 backdrop-blur-xl shadow-lg shadow-black/20 border-b border-neon-500/10 md:glass-strong"
-          : "bg-void-950/95 backdrop-blur-xl md:bg-transparent md:backdrop-blur-none border-b border-white/10 md:border-transparent"
+          ? "bg-void-950/98 backdrop-blur-2xl shadow-lg shadow-black/20 border-b border-neon-500/10 md:glass-strong"
+          : "bg-void-950 backdrop-blur-none border-b border-white/5 md:bg-transparent md:backdrop-blur-none md:border-transparent"
       }`}
       style={{ transitionTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)" }}
     >

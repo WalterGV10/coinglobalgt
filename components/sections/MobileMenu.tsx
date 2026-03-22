@@ -44,7 +44,7 @@ export default function MobileMenu({ links }: MobileMenuProps) {
 
       {/* Mobile Dropdown — animated overlay */}
       <div
-        className={`fixed inset-0 top-16 z-[60] border-t border-neon-700/20 transition-all duration-400 ${
+        className={`fixed inset-0 top-[64px] z-[55] border-t border-neon-700/10 transition-all duration-400 ${
           isOpen
             ? "opacity-100 visible"
             : "opacity-0 invisible pointer-events-none"
