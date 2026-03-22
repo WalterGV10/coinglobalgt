@@ -67,6 +67,12 @@ export async function generateMetadata({
       index: true,
       follow: true,
     },
+    icons: {
+      icon: "/icon-512.png",
+      shortcut: "/icon-512.png",
+      apple: "/apple-touch-icon.png",
+    },
+    manifest: "/site.webmanifest",
   };
 }
 
